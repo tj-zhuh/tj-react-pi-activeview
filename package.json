@@ -1,0 +1,38 @@
+{
+  "name": "tj-react-pi-activeview",
+  "version": "0.1.6",
+  "description": "在react框架中加载OSI PI的PI-ActiveView插件",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./index.js",
+    "build": "npm run clean && webpack",
+    "dev": "webpack-dev-server --config ./examples/webpack.config.dev.js",
+    "start": "npm run dev",
+    "prepublish": "npm run build",
+    "postpublish": "npm run clean"
+  },
+  "files": [ "index.js" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhizao/tj-react-pi-activeview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhizao/tj-react-pi-activeview/issues"
+  },
+  "homepage": "https://github.com/zhizao/tj-react-pi-activeview#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
